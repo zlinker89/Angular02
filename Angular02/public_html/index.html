@@ -4,29 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>practica eva</title>
     <script src="../Scripts/angular.min.js"></script>
+    <script src="../Scripts/index.js"></script>
 </head>
 <body>
-    <div ng-controller="control1">
-        <div ng-show="saludar">
-            {{ nombre}}
-            <h1 ng-bind="nombre"></h1>
-        </div>
-        
-
-        <label>nombre</label>
-        <input type="text" ng-model="nombre" />
-        <button ng-click="mostrar()">registrar</button>
-
+    <div>
+        <div ng-include="'templates/listadoPersonas.htm'">
     </div>
 </body>
 </html>
-<script>
-    angular.module("eva", []).controller("control1", function ($scope) {
-        $scope.saludar = false;
-        $scope.mostrar = function () {
-            $scope.saludar = true;
-        }
-        $scope.nombre = "";
-
-    });
-</script>

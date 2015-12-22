@@ -1,0 +1,13 @@
+﻿<div ng-controller="control1">
+
+    <label>nombre</label>
+    <input type="text" ng-model="nombres" />
+    <label>apellido</label>
+    <input type="text" ng-model="apellidos" />
+    <button ng-click="addPersona()">registrar</button>
+
+
+    <ul>
+        <li ng-repeat="p in personas">{{p.nombres}} -- {{p.apellidos}} <button ng-click="deletePersona(p)">Eliminar</button></li>
+    </ul>
+</div>
