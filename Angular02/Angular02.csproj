@@ -148,7 +148,6 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="public_html\hola.html" />
     <Content Include="public_html\index.html" />
     <Content Include="public_html\templates\listadoPersonas.htm" />
     <Content Include="Scripts\angular-animate.js" />
